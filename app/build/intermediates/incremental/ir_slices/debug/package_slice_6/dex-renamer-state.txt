@@ -1,0 +1,4 @@
+#Thu Oct 25 14:42:48 CST 2018
+base.0=/Users/admin/Downloads/XGDemoForAndroidStudio/app/build/intermediates/transforms/dexMerger/debug/64
+path.0=classes.dex
+renamed.0=classes.dex

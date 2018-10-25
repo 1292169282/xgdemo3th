@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.jg:jg-1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jg-1.1.aar/0cbd923e1743519abc2c07d909ed5fc0/jars/libs/jg_filter_sdk_1.1.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jg-1.1.aar/0cbd923e1743519abc2c07d909ed5fc0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jg-1.1.aar/0cbd923e1743519abc2c07d909ed5fc0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.jg/jg/1.1/26d6ee3e86ec6e03eff7eaf52fcdf6e5a77d6139/jg-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

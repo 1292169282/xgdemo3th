@@ -97,3 +97,14 @@ Log.d("TPush", "注册失败，错误码：" + errCode + ",错误信息：" + ms
 10-25 15:34:26.423 18700-18700/? D/TPush: +++ register push sucess. token:22dc455f79d36dec1065418e1d284639bac776b4
 10-25 15:34:26.432 18700-18731/? I/XINGE: [XGOtherPush] other push token is : lYDvOWispXGoVADhRyiVdw3krLIolEd21JqdmjqBqDISK+gwl/PBm3tA9U43jxfH other push type: xiaomi
 ```
+**注意**<br>
+1. application ID、当前的应用包名、信鸽官网上注册应用的包名以及厂商官网上的包名必须一致。<br>
+2. 华为推送只有在签名发布包环境下才可以收到推送消息。<br>
+3. 魅族官网上有两个APP ID，信鸽的魅族通道的APP ID是六位数的。<br>
+
+**厂商通道功能支持**
+
+1. 小米通道支持抵达回调，不支持点击回调，支持透传
+2. 华为通道不支持抵达回调，支持点击回调（需要自定义参数），支持透传（但忽略自定义参数）
+3. 魅族通道支持抵达回调，支持点击回调，不支持透传
+

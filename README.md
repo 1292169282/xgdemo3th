@@ -1,6 +1,6 @@
-####厂商通道otherpush demo
-###AS自动集成指南
-##1.1 导入依赖
+#厂商通道otherpush demo
+#AS自动集成指南
+1.1 导入依赖
 在app build.gradle文件下配置 以下内容
 ```java
     android {

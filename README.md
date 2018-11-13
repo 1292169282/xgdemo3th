@@ -1,6 +1,9 @@
-#厂商通道otherpush demo
-#AS自动集成指南
+厂商通道otherpush demo
+
+AS自动集成指南
+
 1.1 导入依赖
+
 在app build.gradle文件下配置 以下内容
 ```java
     android {
@@ -36,20 +39,20 @@
     compile 'com.tencent.mid:mid:4.0.7'
     }
    ```
-##1.2 注册以及部分日志输出
+1.2 注册以及部分日志输出
 配置好信鸽过后，获取信鸽注册日志（接入过程中建议调用有回调的注册接口，开启信鸽的debug日志输出。AndroidStudio 建议采用jcenter自动接入，无需在配置文件中配置信鸽各个节点，全部由依赖导入）。
 
-*
-*开启debug日志数据**
+
+开启debug日志数据
 ```java
 XGPushConfig.enableDebug(this,true);
 ```
-**开启厂商通道初始化代码**
+开启厂商通道初始化代码
 在你的Application的attachBaseContext函数里面增加
 ```java
 StubAppUtils.attachBaseContext(context);
 ```
-#在初始化或者主页面onCreat函数里添加
+在初始化或者主页面onCreat函数里添加
 ```java
  XGPushConfig.enableOtherPush(getApplicationContext(), true);
  XGPushConfig.setHuaweiDebug(true);
@@ -58,8 +61,8 @@ StubAppUtils.attachBaseContext(context);
  XGPushConfig.setMzPushAppId(this, "APPID");
  XGPushConfig.setMzPushAppKey(this, "APPKEY");
  ```
- *
-*token注册**
+ 
+**token注册**
 
 ```java
 XGPushManager.registerPush(this, new XGIOperateCallback() {
@@ -74,8 +77,8 @@ Log.d("TPush", "注册失败，错误码：" + errCode + ",错误信息：" + ms
 }
 })
 ```
-*
-*厂商通道token注册**
+
+**厂商通道token注册**
 
 1.开启厂商通道初始化，等待云控下载对应设备的厂商dex包 （首次开启注册才会有以下代码）。
 以小米为例，下载成功的日志如下：

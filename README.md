@@ -1,8 +1,6 @@
-厂商通道otherpush demo
-
-AS自动集成指南
-
-1.1 导入依赖
+# 厂商通道otherpush demo
+## AS自动集成指南
+### 1.1 导入依赖
 
 在app build.gradle文件下配置 以下内容
 ```java
@@ -38,16 +36,17 @@ AS自动集成指南
     //mid包
     compile 'com.tencent.mid:mid:4.0.7'
     }
-   ```
-1.2 注册以及部分日志输出
+
+```
+### 1.2 注册以及部分日志输出
 配置好信鸽过后，获取信鸽注册日志（接入过程中建议调用有回调的注册接口，开启信鸽的debug日志输出。AndroidStudio 建议采用jcenter自动接入，无需在配置文件中配置信鸽各个节点，全部由依赖导入）。
 
 
-开启debug日志数据
+**开启debug日志数据**
 ```java
 XGPushConfig.enableDebug(this,true);
 ```
-开启厂商通道初始化代码
+**开启厂商通道初始化代码**
 在你的Application的attachBaseContext函数里面增加
 ```java
 StubAppUtils.attachBaseContext(context);
